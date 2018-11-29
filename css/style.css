@@ -1,0 +1,260 @@
+
+
+.utili{
+	font-family: monospace;
+ 	 box-sizing: border-box;
+ 	 margin: 0;
+ 	 padding: 0;
+	background-color: #F0F0F0;
+	padding: 20px;	
+	font-size: 0.9vw;
+	word-spacing: 3px;
+}
+/* top */
+.utili-top-left a{
+	text-decoration: none;
+	float: left;
+}
+.utili-top-left,.utili-top-right{
+	display: inline-block;
+}
+.utili-top-right{
+	padding: 10px; 
+	background-color: yellow;
+	border-radius: 50%;
+	float: right;
+}
+.utili-top-right i{	
+	color: white;
+	font-size: 20px;
+}
+
+/* content */
+.utili-content{
+	padding:20px 0;
+	height: 96%;		
+}
+
+/* content left */
+.utili-content-left{
+	float: left;
+	width: 59%;
+	background-color: white;	
+	height: 100%;
+	font-size: 0.8em;
+}
+.utili-content-left .ucl-top{
+	padding: 10px;
+}
+.utili-content-left .bluedot{
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: #007CA4;
+	display: inline-block;
+}
+.utili-content-left hr{
+	border: 1px solid #F0F0F0;
+	margin: 0 0 10px 0;
+}
+.utili-content-left .partner{
+	padding: 15px;
+}
+.partner .partner1{
+	float: left;	
+}
+.partner .partner2{
+	float: right;
+}
+#modelName{
+	color: white;
+}
+.partner > div{
+	width: 50%;
+	padding-right: 3%;
+}
+.clear::after{
+	clear: both;
+	display: table;
+	content: "";
+}
+.partner-title{
+	color: #007CA4;
+}
+.partner-left{
+	float: left;
+	width: 40%;
+	color: #A6A6A6;
+	line-height: 29px;
+}
+.partner-right{
+	float: right;
+	width: 55%;
+	border: solid 0.5px;
+}
+
+.partner > div > div{
+	margin-top: 1%;
+}
+.partner input{
+	padding: 8px;
+	font-family: courier;
+	font-weight: bold;
+	border: 1px solid black;
+	background-color: white;
+}
+.partner label.partner-left{
+	margin: 0;
+}
+.partner .input-color{
+	border: 1px solid black;
+	padding: 6px;
+	display: inline-block;
+}
+.partner .input-color button{
+	height: 20px;
+	width:20px;
+	border: none;
+	float: left;
+}
+.partner .input-color p{
+	margin: 0;
+	padding-left: 10px;
+	float: left;
+	line-height: 20px;
+	
+}
+.avatar{
+	display: inline-block;	
+	border: 1px solid black;
+	position: relative;
+}
+.avatar>div.choose-file {
+	display: inline-block;
+	background-position: center center;
+    background-size: cover;
+    overflow: visible;
+    /*padding: 5px;*/
+    position: relative;
+	height: 100px;
+	width: 95%;
+}
+.avatar>div.icon-remove {
+	/*display: inline;
+	margin-top: -30px;*/
+	padding: 2px;
+	position: absolute;
+	right: 0px;
+	top: 2px;
+	color: red;	
+}
+.avatar>div.icon-remove button{
+	background-color: white;
+	border-width: 0;
+}
+
+img.image-show{
+	width: 90%;
+	max-height: 100%;
+	display: block;
+	position: absolute;	
+	object-fit:contain;
+	border: 1px dashed gray;
+	overflow: visible;	
+}
+
+.label-class {
+	margin: 5px;
+	padding-top: 25%;
+	border: 1px dashed black;
+	width: 90%;
+	height: auto;	
+}
+.partner2 .email_expand{
+	margin: 45px 0;
+}
+.partner2 .email_expand .switch{
+	float: right;
+}
+input.error-alert{
+	float: right;
+	width: 55%;
+	border: solid 0.5px red;
+}
+#info > div{
+	margin-top: 1%;
+}
+.email_password .switch{
+	margin-left: 5%;
+	margin-top: 5px;
+}
+div#switch_btn{
+	margin-top: 20px;
+}
+/* content right */
+.utili-content-right{
+	float: right;
+	width: 40%;
+	background-color: #7F7F7F;	
+	height: 100%;
+}
+.preview-title{
+	color: gray;
+	margin:0;
+}
+.partner-preview{
+	margin: 1% 5%;
+	background-color: white;
+	padding:2%;
+	height: 98%;
+	
+}
+.preview-logo{
+	border: 1px dashed gray;
+	height: 30%;
+	width: 90%;
+	margin: 0 auto;
+}
+.preview-logo > img{
+	display: block;
+	margin: 0px auto;
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+.partner-preview p{
+	font-size: 0.7em;
+	text-align: justify;
+}
+#pp-name{
+	text-align: center;
+	color: white;
+	padding: 10px;
+}
+.partner-preview .ppp-part{
+	padding: 10px;
+	margin: 20px auto;
+	width: 50%;
+}
+.ppp-part img{
+	width: 100%;
+	height: 100%;
+}
+.ppp-part span{
+	margin: 0;
+	padding: 0 10px;
+}
+
+@media screen and (max-width:1360px){
+	.utili{
+		height: 768px;	
+			
+	}
+	
+}
+@media screen and (min-width:1361px){
+	.utili{
+		height: 1024px;		
+	}
+	
+}

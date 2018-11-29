@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Demo</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" 
+	crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/test2.css">
+	<script src="js/angular.min.1.5.8.js"></script>
+	<script src="js/jscolor.js"></script>
+	<script src="js/angular-sanitize-1.5.8.js"></script>
+	<script src="js/index.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/selectimg.js"></script>
+</head>
+<body >
+	
+	<div class="utili" ng-app="demo" ng-controller="controllerAC">
+		<div class="utili-top clear">
+			<div class="utili-top-left">
+				<a href="#">Mails</a>
+				<br>
+				<a href="#">automatiques</a>
+			</div>
+			<div class="utili-top-right">
+				<a href="#" >
+					<i class="fas fa-pen"></i>
+				</a>
+			</div>
+		</div>
+
+		<div class="utili-content clear">
+			<div class="utili-content-left">
+				<div class="ucl-top">
+					<div class="bluedot"></div>
+					<label><b>Paramètres</b></label>
+				</div>
+				<hr id="ucl-line">
+				<div class="partner clear">					
+					<div class="partner1">
+						<p class="partner-title">Identité de l’expéditeur</p>
+						<div class="white_label_name clear" >
+							<label class="partner-left">Nom</label>
+							<input class="partner-right" type="text" ng-model="name" id="modelName">
+						</div>
+						<div class="email_logo clear" >
+							<label class="partner-left">Logo</label>
+							<div class="partner-right input avatar" >
+								<div class="choose-file" id="login_Box_Div">
+									<img src="" alt="" class="image-show hide">
+									<input type="file" name="" id="file" class="input-file hide">
+									<label for="file" class="label-class"></label>
+								</div>
+								<div class="icon-remove">
+									<button id="hide-img"><span class="glyphicon glyphicon-remove"></span></button>
+								</div>
+							</div>
+						</div>
+
+						<div class="link_url clear" >
+							<label class="partner-left">URL plateforme</label>
+							<input class="partner-right" type="text" ng-model="link_url">
+						</div>
+
+						<div class="email_dominant_color clear" >
+							<label class="partner-left">Couleur principale</label>
+							<div class="input-color partner-right">
+								<button class="jscolor
+		    							{valueElement:'valueSpan1',value:setColor1(),onFineChange:'update1(this)'}"
+		    							>
+								</button>
+								<p># <span id="valueSpan1"></span></p>
+							</div>
+						</div>
+						<div class="email_secondary_color clear" >
+							<label class="partner-left">Couleur Secondaire</label>
+							<div class="input-color partner-right">
+								<button class="jscolor
+		    							{valueElement:'valueSpan2',value:setColor2(),onFineChange:'update2(this)'}"
+		    							>
+								</button>
+								<p># <span id="valueSpan2"></span></p>
+								
+							</div>
+						</div>
+					</div>
+
+					<div class="partner2" >
+						<p class="partner-title">Modalités d’envoi</p>
+						<div class="email_address clear" >
+							<label class="partner-left">Address mail</label>
+							<input class="partner-right" type="text" placeholder="Enter your email"  >
+						</div>
+						<div class="email_expand">
+							<label>Utiliser un nom de domaine réel</label>
+							<label class="switch">
+							  <input id="on" type="checkbox" checked='false' class="hide">
+							  <span class="slider round"></span>
+							</label>
+						</div>
+						<div id="info" class="hide">
+							<div class="email_password clear" >
+								<label class="partner-left">Mot de passe</label>
+								<input id="fname2" class="partner-right error-alert" type="password" required>
+							</div>
+								<div class="email_password clear" >
+								<label class="partner-left ">Address mail</label>
+								<input type="email" class="text partner-right error-alert" name="email_18" id="amf-input-email_18" value="" placeholder="someone@example.com" maxlength="255" 
+								onblur="checkEmail(this.value)">
+							</div>
+							<div class="email_password clear" >
+								<label class="partner-left">SMTP Host</label>
+								<input id="fname1" class="partner-right error-alert" type="text" required >
+							</div>
+							<div class="email_password clear" >
+								<label class="partner-left">SMTP PORT</label>
+								<input id="fname" class="partner-right error-alert" type="text" required>
+							</div>	
+							<div class="email_password clear" id="switch_btn">
+								<label class="partner-left">TTL</label>
+								<label class="switch">
+								  <input id="on" type="checkbox" checked='false' class="hide">
+								  <span class="slider round"></span>
+								</label>
+							</div>
+							<div class="email_password clear" >
+								<label class="partner-left">SSL</label>
+								<label class="switch">
+								  <input id="on" type="checkbox" checked='false' class="hide">
+								  <span class="slider round"></span>
+								</label>
+							</div>						
+						
+						</div>
+					</div>
+																								
+				</div>
+			</div>
+			<div class="utili-content-right" >				
+				<div class="partner-preview">
+					<p class="partner-preview-title">Aperçu</p>
+					<div class="preview-logo"><img id = "logo" src="" class="hide"></div>
+					<br>
+					<p id="pp-name">Activation de votre compte <span ng-bind="name"></span></p>
+					<p>Bonjour,</p>
+					<p>Nous avons le plaisir de vous confirmer la création de votre compte <span ng-bind="name"></span></p>
+					<p>Voici les informations qui vous permettront de vous connecter à votre plateforme:</p>
+					<div class="pp-plateform">
+						<div class="ppp-part" id="ppp1">
+							<img src="icon/user.png" style="width: 15px">
+							<span>[User login]</span>
+						</div>
+						<div class="ppp-part" id="ppp2">
+							<img src="icon/lock.png" style="width: 15px">
+							<span>[User password]</span>
+						</div> 
+					</div>
+					<p>Très bonne journée à vous,<br>L'équipe <span ng-bind="name"></span>.</p>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<script type="text/javascript">
+		
+	</script>
+</body>
+
+</html>
